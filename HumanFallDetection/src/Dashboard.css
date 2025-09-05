@@ -1,0 +1,401 @@
+/* Dashboard.css */
+
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: #f9fafb;
+  font-family: 'Noto Sans KR', sans-serif;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1e293b;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.dashboard-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.logout-button {
+  background: #ef4444;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+.logout-button:hover {
+  background: #dc2626;
+}
+
+.dashboard-main {
+  display: flex;
+  flex: 1;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+/* 좌측 영상 */
+.video-section {
+  flex: 2;
+  background: white;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.video-box {
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.video-box video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 우측 알림 */
+.alert-section {
+  flex: 1;
+  background: white;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  overflow-y: auto;
+}
+
+.alert-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.alert-item {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 0.95rem;
+}
+
+.alert-danger {
+  color: #dc2626;
+  font-weight: bold;
+}
+.alert-warning {
+  color: #f59e0b;
+  font-weight: bold;
+}
+
+.share-section {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.primary-button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+.primary-button:hover {
+  background: #1d4ed8;
+}
+
+.secondary-button {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.secondary-button:hover {
+  background: #dc2626;
+}
+
+/* 영상 카드 */
+.video-section {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  padding: 1.5rem;
+  text-align: center;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.video-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 1rem;
+}
+
+.placeholder-text {
+  font-size: 0.95rem;
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+}
+
+.video-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* .video-box {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+} */
+
+/* 버튼 스타일 */
+.primary-button {
+  background: linear-gradient(90deg, #6366f1, #4338ca);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 3px 8px rgba(99,102,241,0.4);
+}
+.primary-button:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(90deg, #4f46e5, #3730a3);
+}
+
+.primary-button.large {
+  font-size: 1.1rem;
+  padding: 0.9rem 2rem;
+}
+
+.secondary-button {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background 0.2s;
+}
+.secondary-button:hover {
+  background: #dc2626;
+}
+
+/* 영상 페이지 전체 레이아웃 */
+.video-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background: #f7f8fa;
+  padding: 2rem;
+}
+
+/* 헤더 */
+.video-header {
+  margin-bottom: 1rem;
+}
+.video-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #3b3b98;
+  text-align: center;
+}
+
+/* 메인 영역 */
+.video-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 영상 박스 */
+.video-wrapper {
+  background: #000;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.video-box-wide {
+  width: 800px;   /* 🔹 넓게 */
+  height: 450px;  /* 16:9 비율 */
+  object-fit: cover;
+}
+
+/* 버튼 여백 */
+.mt-4 {
+  margin-top: 1rem;
+}
+
+/* 전체 풀스크린 */
+.video-fullscreen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background: #111; /* 다크 배경 */
+  color: #fff;
+}
+
+.video-topbar {
+  display: flex;
+  justify-content: space-between;  /* 제목 왼쪽, 버튼 오른쪽 */
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #1e1e2f;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
+
+
+.video-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f5f6fa;
+}
+
+/* 버튼 오른쪽 상단 고정 느낌 */
+.exit-button {
+  position: absolute;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%); /* 세로 가운데 정렬 */
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.exit-button:hover {
+  background: #c0392b;
+}
+
+/* 영상 메인 영역 */
+.video-main-full {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+
+/* .video-screen {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; 
+  background: black;
+} */
+
+.exit-button-bottom {
+  margin-top: 1rem;
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: bold;
+}
+.exit-button-bottom:hover {
+  background: #c0392b;
+}
+
+/* 공통 상단바 버튼 */
+.topbar-button {
+  background: #ef4444;
+  color: white;
+  padding: 0.5rem 1rem;   /* 🔹 로그아웃 버튼과 동일 */
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+.topbar-button:hover {
+  background: #dc2626;
+}
+
+/* 기존 클래스들은 공통 클래스를 재사용하도록 */
+.logout-button {
+  composes: topbar-button; /* CSS Modules 쓸 경우 */
+  /* 일반 CSS라면 그냥 .logout-button에 .topbar-button 넣어도 됨 */
+}
+
+.exit-button-bottom {
+  margin-top: 1rem;
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateX(300px);  /* 🔹 원하는 만큼 오른쪽으로 밀기 */
+}
+
+/* ===== 공통 영상 크기 ===== */
+.video-box,
+.video-screen {
+  width: 100%;
+  height: 70vh;          /* 🔹 메인과 영상 페이지 동일 */
+  max-width: 960px;      /* 필요시 가로폭 제한 */
+  border-radius: 12px;
+  background: black;
+  object-fit: cover;     /* 꽉 차게 */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* 메인 대시보드 안 영상 */
+.video-box video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
